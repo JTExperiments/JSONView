@@ -1,0 +1,52 @@
+{
+    "ids":[
+           "features",
+           "color",
+           ],
+    "color":{
+        "silver":{
+            "text":"silver",
+            "image":"url",
+        },
+        "gold":{
+            "text":"gold",
+            "image":"url",
+        },
+        "black":{
+            "text":"black",
+            "image":"url",
+        },
+        "ids":[
+               "silver",
+               "gold",
+               "black",
+               ],
+    },
+    "features": {
+        "audio":{
+            "id":1,
+            "text":"audio",
+            "value":"mp3",
+            "icon":"url",
+        },
+        "screen":{
+            "id":2,
+            "text":"screen",
+            "value":"320x640",
+            "icon":"url",
+        },
+        "gps":{
+            "id":3,
+            "text":"gps",
+            "value":"true",
+            "icon":"url",
+        },
+        "ids":[
+               "audio",
+               "screen",
+               "gps",
+               ],
+    },
+    "name": "iPhone 6",
+    "capacity": ["16", "64", "128"],
+}

@@ -12,6 +12,13 @@
 		1AA2D45919D323CC0003A9A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA2D45719D323CC0003A9A1 /* Main.storyboard */; };
 		1AA2D45B19D323CC0003A9A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA2D45A19D323CC0003A9A1 /* Images.xcassets */; };
 		1AA2D46719D323CC0003A9A1 /* JSONViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2D46619D323CC0003A9A1 /* JSONViewTests.swift */; };
+		1AA2D47319D323EF0003A9A1 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2D47019D323EF0003A9A1 /* JSONLoader.swift */; };
+		1AA2D47419D323EF0003A9A1 /* JSONView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2D47119D323EF0003A9A1 /* JSONView.swift */; };
+		1AA2D47519D323EF0003A9A1 /* JSONDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2D47219D323EF0003A9A1 /* JSONDataSource.swift */; };
+		1AA2D47719D324450003A9A1 /* iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AA2D47619D324450003A9A1 /* iphone.json */; };
+		1AA2D47919D328C70003A9A1 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2D47819D328C70003A9A1 /* ColorView.swift */; };
+		1AA2D47B19D32BFD0003A9A1 /* hi.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AA2D47A19D32BFD0003A9A1 /* hi.json */; };
+		1AA2D47F19D3AA100003A9A1 /* FeatureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2D47E19D3AA100003A9A1 /* FeatureTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,13 @@
 		1AA2D46019D323CC0003A9A1 /* JSONViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AA2D46519D323CC0003A9A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AA2D46619D323CC0003A9A1 /* JSONViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONViewTests.swift; sourceTree = "<group>"; };
+		1AA2D47019D323EF0003A9A1 /* JSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		1AA2D47119D323EF0003A9A1 /* JSONView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONView.swift; sourceTree = "<group>"; };
+		1AA2D47219D323EF0003A9A1 /* JSONDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDataSource.swift; sourceTree = "<group>"; };
+		1AA2D47619D324450003A9A1 /* iphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = iphone.json; sourceTree = "<group>"; };
+		1AA2D47819D328C70003A9A1 /* ColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		1AA2D47A19D32BFD0003A9A1 /* hi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hi.json; sourceTree = "<group>"; };
+		1AA2D47E19D3AA100003A9A1 /* FeatureTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,11 +89,16 @@
 		1AA2D45019D323CC0003A9A1 /* JSONView */ = {
 			isa = PBXGroup;
 			children = (
+				1AA2D47019D323EF0003A9A1 /* JSONLoader.swift */,
+				1AA2D47119D323EF0003A9A1 /* JSONView.swift */,
+				1AA2D47219D323EF0003A9A1 /* JSONDataSource.swift */,
 				1AA2D45319D323CC0003A9A1 /* AppDelegate.swift */,
 				1AA2D45519D323CC0003A9A1 /* ViewController.swift */,
 				1AA2D45719D323CC0003A9A1 /* Main.storyboard */,
 				1AA2D45A19D323CC0003A9A1 /* Images.xcassets */,
 				1AA2D45119D323CC0003A9A1 /* Supporting Files */,
+				1AA2D47819D328C70003A9A1 /* ColorView.swift */,
+				1AA2D47E19D3AA100003A9A1 /* FeatureTableViewCell.swift */,
 			);
 			path = JSONView;
 			sourceTree = "<group>";
@@ -88,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				1AA2D45219D323CC0003A9A1 /* Info.plist */,
+				1AA2D47619D324450003A9A1 /* iphone.json */,
+				1AA2D47A19D32BFD0003A9A1 /* hi.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -189,7 +210,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AA2D47B19D32BFD0003A9A1 /* hi.json in Resources */,
 				1AA2D45919D323CC0003A9A1 /* Main.storyboard in Resources */,
+				1AA2D47719D324450003A9A1 /* iphone.json in Resources */,
 				1AA2D45B19D323CC0003A9A1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,8 +231,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AA2D47919D328C70003A9A1 /* ColorView.swift in Sources */,
 				1AA2D45619D323CC0003A9A1 /* ViewController.swift in Sources */,
 				1AA2D45419D323CC0003A9A1 /* AppDelegate.swift in Sources */,
+				1AA2D47519D323EF0003A9A1 /* JSONDataSource.swift in Sources */,
+				1AA2D47419D323EF0003A9A1 /* JSONView.swift in Sources */,
+				1AA2D47F19D3AA100003A9A1 /* FeatureTableViewCell.swift in Sources */,
+				1AA2D47319D323EF0003A9A1 /* JSONLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
