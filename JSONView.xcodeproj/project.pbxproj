@@ -18,7 +18,8 @@
 		1AA2D47719D324450003A9A1 /* iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AA2D47619D324450003A9A1 /* iphone.json */; };
 		1AA2D47919D328C70003A9A1 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2D47819D328C70003A9A1 /* ColorView.swift */; };
 		1AA2D47B19D32BFD0003A9A1 /* hi.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AA2D47A19D32BFD0003A9A1 /* hi.json */; };
-		1AA2D47F19D3AA100003A9A1 /* FeatureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2D47E19D3AA100003A9A1 /* FeatureTableViewCell.swift */; };
+		1AA2D47F19D3AA100003A9A1 /* StyleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2D47E19D3AA100003A9A1 /* StyleTableViewCell.swift */; };
+		1AA564EF19D417C9006AB0C9 /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AA564ED19D417C9006AB0C9 /* style.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,8 @@
 		1AA2D47619D324450003A9A1 /* iphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = iphone.json; sourceTree = "<group>"; };
 		1AA2D47819D328C70003A9A1 /* ColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		1AA2D47A19D32BFD0003A9A1 /* hi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hi.json; sourceTree = "<group>"; };
-		1AA2D47E19D3AA100003A9A1 /* FeatureTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureTableViewCell.swift; sourceTree = "<group>"; };
+		1AA2D47E19D3AA100003A9A1 /* StyleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleTableViewCell.swift; sourceTree = "<group>"; };
+		1AA564ED19D417C9006AB0C9 /* style.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = style.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,7 @@
 				1AA2D45A19D323CC0003A9A1 /* Images.xcassets */,
 				1AA2D45119D323CC0003A9A1 /* Supporting Files */,
 				1AA2D47819D328C70003A9A1 /* ColorView.swift */,
-				1AA2D47E19D3AA100003A9A1 /* FeatureTableViewCell.swift */,
+				1AA2D47E19D3AA100003A9A1 /* StyleTableViewCell.swift */,
 			);
 			path = JSONView;
 			sourceTree = "<group>";
@@ -108,6 +110,7 @@
 			children = (
 				1AA2D45219D323CC0003A9A1 /* Info.plist */,
 				1AA2D47619D324450003A9A1 /* iphone.json */,
+				1AA564ED19D417C9006AB0C9 /* style.json */,
 				1AA2D47A19D32BFD0003A9A1 /* hi.json */,
 			);
 			name = "Supporting Files";
@@ -214,6 +217,7 @@
 				1AA2D45919D323CC0003A9A1 /* Main.storyboard in Resources */,
 				1AA2D47719D324450003A9A1 /* iphone.json in Resources */,
 				1AA2D45B19D323CC0003A9A1 /* Images.xcassets in Resources */,
+				1AA564EF19D417C9006AB0C9 /* style.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +240,7 @@
 				1AA2D45419D323CC0003A9A1 /* AppDelegate.swift in Sources */,
 				1AA2D47519D323EF0003A9A1 /* JSONDataSource.swift in Sources */,
 				1AA2D47419D323EF0003A9A1 /* JSONView.swift in Sources */,
-				1AA2D47F19D3AA100003A9A1 /* FeatureTableViewCell.swift in Sources */,
+				1AA2D47F19D3AA100003A9A1 /* StyleTableViewCell.swift in Sources */,
 				1AA2D47319D323EF0003A9A1 /* JSONLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +427,7 @@
 				1AA2D46C19D323CC0003A9A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AA2D46D19D323CC0003A9A1 /* Build configuration list for PBXNativeTarget "JSONViewTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +436,7 @@
 				1AA2D46F19D323CC0003A9A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

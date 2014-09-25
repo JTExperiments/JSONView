@@ -28,7 +28,7 @@ extension UIView {
                 s.setAttribute(value, forKey:key)
             } else if self.respondsToSelector(Selector(key)) {
                 println("key: \(key) = \(value)")
-                self.setValue(value, forKey:key)
+                self.setValue(value, forKeyPath:key)
                 //                    println("view \(self) setting value '\(value) for '\(key)'")
             } else {
                 //                    println("view \(self) not responds to selector '\(key)'")
@@ -100,6 +100,7 @@ class JSONViewController: UIViewController, JSONDestination {
     }
 }
 
+@IBDesignable
 class JSONTableView : UITableView, UITableViewDataSource {
 
     var ids : [String]?

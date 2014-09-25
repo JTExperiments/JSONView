@@ -6,15 +6,15 @@
     "color":{
         "silver":{
             "text":"silver",
-            "image":"url",
+            "image":"url1",
         },
         "gold":{
             "text":"gold",
-            "image":"url",
+            "image":"url2",
         },
         "black":{
             "text":"black",
-            "image":"url",
+            "image":"url3",
         },
         "ids":[
                "silver",

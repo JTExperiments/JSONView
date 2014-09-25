@@ -1,0 +1,11 @@
+{
+    ".rightDetail": {
+        "text" : "textLabel.text",
+        "value" : "detailTextLabel.text",
+        "image" : ".",
+    },
+    ".subtitle": {
+        "text" : "textLabel.text",
+        "image" : "detailTextLabel.text",
+    },
+}
