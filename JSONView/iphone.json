@@ -1,9 +1,10 @@
 {
-    "ids":[
+    "sections":[
            "features",
            "color",
            ],
     "color":{
+        "header":"color",
         "silver":{
             "text":"silver",
             "image":"url1",
@@ -16,13 +17,14 @@
             "text":"black",
             "image":"url3",
         },
-        "ids":[
+        "rows":[
                "silver",
                "gold",
                "black",
                ],
     },
     "features": {
+        "header":"features",
         "audio":{
             "id":1,
             "text":"audio",
@@ -41,7 +43,7 @@
             "value":"true",
             "icon":"url",
         },
-        "ids":[
+        "rows":[
                "audio",
                "screen",
                "gps",

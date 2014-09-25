@@ -103,7 +103,7 @@ class JSONViewController: UIViewController, JSONDestination {
 @IBDesignable
 class JSONTableView : UITableView, UITableViewDataSource {
 
-    var ids : [String]?
+    var sections : [String]?
     var info : NSMutableDictionary? = NSMutableDictionary()
 
     override func awakeFromNib() {
@@ -111,40 +111,54 @@ class JSONTableView : UITableView, UITableViewDataSource {
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let identifier = ids?[section] {
+        if let identifier = sections?[section] {
             let data = info?[identifier] as NSDictionary
-            let ids = data["ids"] as [String]
+            let ids = data["rows"] as [String]
             return ids.count
         }
         return 0
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        let count = ids?.count ?? 0
+        let count = sections?.count ?? 0
         println("count: \(count)")
         return count
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cellIdentifier = ids?[indexPath.section] ?? "cell"
+        let cellIdentifier = sections?[indexPath.section] ?? "cell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as UITableViewCell
 
-        let data = info?[cellIdentifier] as NSDictionary
-        let rowIdentifier = data["ids"] as [String]
-        let dataId = rowIdentifier[indexPath.row]
-        let dict = data[dataId] as NSDictionary
+        let scope = info?[cellIdentifier] as NSDictionary
+        let rows = scope["rows"] as [String]
+        let dataId = rows[indexPath.row]
+        let dict = scope[dataId] as NSDictionary
 
         cell.assignDictionary(dict as [String: AnyObject], recursiveLevel: 1)
 
         return cell
     }
 
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let section = sections?[section] ?? "cell"
+        let scope = info?[section] as NSDictionary
+        return scope["header"] as? String
+    }
+
+    func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        let section = sections?[section] ?? "cell"
+        let scope = info?[section] as NSDictionary
+        return scope["footer"] as? String
+    }
+
+    // MARK: Responder & KVC
+
     override func respondsToSelector(aSelector: Selector) -> Bool {
         var responds = super.respondsToSelector(aSelector)
 
         let selector = NSStringFromSelector(aSelector)
 
-        if let sections = ids {
+        if let sections = sections {
             if let index = find(sections, selector) {
                 responds = true
             }
